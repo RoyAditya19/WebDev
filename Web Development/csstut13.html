@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title> <!--flex box is used for alignment -->
+    <style>
+        .container{ /*the parent container has been made as flex so the items within the container are now flex items by default*/
+            height: 500px;
+            width: 100%;
+            border: 2px solid blue;
+            display: flex;
+            /*Flex properties for flex Container*/
+            
+            /*flex-direction: row;*/                            /*flex direction by default is row*/
+            /*flex-direction: column;*/                         /*this has been over-ridden by the row reverse method*/
+            /*flex-direction: row-reverse;*/                    /*filling of items will start from reverse*/
+            /*flex-wrap: wrap;*/                                /* wraps your elements in such a way that when you are viewing it in phone it(element) doesn't goes out of the parent box*/
+            /*flex-flow: row-reverse wrap;*/                    /*short-hand for using flex-direction and flex wrap in one line of code*/
+            /*justify-content: center;*/                       /*all the items are grouped at the center */
+            /*justify-content: space-between;*/                /*gives the spaces between the boxes or items*/
+            /*justify-content: space-evenly;*/                 /*spaces are equal from starting till the end and in between the items */
+            /*justify-content: space-around;*/                 /*gives equal spacing around both the end of the box*/
+            /*align-items: center;*/                            /*aligns the item at center vertically and horizontally with equal heights*/
+            /*align-items: flex-end;*/
+            /*align-items: stretch;*/                           /*after using this once you decrease the height and width of the items it keeps the equal space between them*/
+
+            
+            
+            
+        }
+        .item{
+            width: 150px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid rgb(17, 15, 15);
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{            
+            /* Flex properties for a flex item*/
+            /*order: 2;*/                                /*now the 1st box will move at the last as it contains the highest order.*/
+            /*flex-grow: 3;*/                                  /*it gives feature of increased length to a particular box whenever it gets a chance to increase the size of the box. in this case the box 1 size will be increased from box2,3 */
+        }
+        #item-2{            
+            /*flex-shrink: 4;*/                                 /*this will shrink the box at the end.. apply these individually for an item. do not mention it in any class*/
+            /*flex-basis: 190px;*/                                  /*it increases the height accordingly like if "when flex-direction is set to row, flex-basis: will control width" and if "when flex-direction is set to column,  flex-basis: will control height"*/
+        }
+        #item-3{            
+             /*flex: 2 2 190px;*/                                /*shorthand for flex, first value represents flex-grow 2nd represents flex-shrink and third represents flex-basis*/
+                /*align-self: flex-start;*/                          /* this aligns the boxes at start*/
+                /*align-self: flex-end;*/                           /*this aligns the boxes at the end*/
+                align-self: center;                                 /*this aligns the box at center from the it's fixed position*/
+            }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Tutorial</h1> 
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+         -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   <!--the following one is an example of id, class selector and group selector-->
+    <style>      
+        /* element selector     */
+        p{
+            border: 2px solid grey;
+        }
+        /*id selector*/
+         #redElement{
+            color: red;
+         }
+    /* class selector*/
+         .redele{
+            color: yellow;
+         }
+         /* grouping selector */
+         footer, span{
+            background-color: darkred;
+         }
+    </style> 
+    <!--as we can see we have used both #(for id) and .(for class).. we mostly use class because it's more convenient.. id is unique and can be used for only one para but class can  be used for multiple para-->
+</head>
+
+<body>
+    <h3>css selectors</h3>
+    <p>This is a simple para to demonstrate css selectors</p>
+    <p id="redElement">This is a simple para to demonstrate css selectors</p>
+    <p class="redele">This is a simple para to demonstrate css selectors</p>
+    <p>This is a simple para to demonstrate css selectors</p>
+    <span>this is a span.</span>
+    <footer>This is a footer</footer>
+</body>
+</html>
+<!-- as we have included # for id selector. we generally don't use #, we use class selectors by using "." -->

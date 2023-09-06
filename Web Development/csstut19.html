@@ -1,0 +1,153 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Tutorial</title>
+    <style>
+    .container{
+        display: grid;
+        /* grid-template-columns: 300px 100px 100px;  ---created columns of three in which 1st width is of 300, 2nd of 100 and 3rd of 100*/
+        /* grid-template-columns: 300px auto 100px;  ---here also the width gets defined*/
+        /* grid-template-columns: 1fr 4fr 1fr; ---it says that give the 1 part of total width to the 1st column, 4 parts of total width to the 2nd column, 1 part to 3rd column*/
+        grid-template-columns: repeat(10, auto);  /* it basically creates 10 columns whose width is auto */
+        grid-gap: 2rem;  /* gives gap between the grid*/
+    }
+    .item{
+        /* height: 100px;
+        width: 100px; */
+        background-color: red;
+        border: 2px solid black;
+        padding: 15px 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+    </div>
+</body>
+</html>
+   -->
+<!-- 
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>CSS Grid </title>
+       <style>
+       .grid{
+           display: grid;
+           grid-template-rows: 1fr 1fr 4fr;          /* it divides the grid in row format*/
+           grid-auto-rows: 2fr;                     /*it gives width to rest of the rows for which width has not been specified*/
+           grid-template-columns: repeat(4, 2fr);
+           grid-gap: 1rem;
+       }
+       .box{
+           background-color: red;
+           border: 2px solid black;
+       }
+       </style>
+   </head>
+   <body>
+       <div class="grid">
+           <div class="box">This is box-1 </div>
+           <div class="box">This is box-2 </div>
+           <div class="box">This is box-3 </div>
+           <div class="box">This is box-4 </div>
+           <div class="box">This is box-5 </div>
+           <div class="box">This is box-6 </div>
+           <div class="box">This is box-7 </div>
+           <div class="box">This is box-8 </div>
+           <div class="box">This is box-9 </div>
+           <div class="box">This is box-10</div>
+       </div>
+   </body>
+   </html> -->
+   
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* grid-column-gap: 7rem;
+        grid-row-gap: 1rem; */
+        grid-gap: 1rem;
+        
+
+    }
+    .box{
+        border: 2px solid black;
+        background-color: rgb(228, 188, 228);
+        padding: 23px;
+    }
+    .box:first-child{
+        /* grid-column-start: 1;  /* through this you can combine two columns... */
+       /* grid-column-end: 3;   
+        grid-row-start: 1;          /*similar to column it will combine the rows*/
+     /*   grid-row-end: 3; */
+        grid-column: 1 / span 3;     /*this is the shortcut for combining three boxes(column-wise) single handedly*/
+        grid-row: 1 / span 3;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-8</div>
+    </div>
+</body>
+</html>

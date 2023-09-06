@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index</title>
+    <style>
+        .box{
+            width:170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top: 49px;
+            z-index: 39; /* what z-index does is it that it helps a element to overlap another element based on the z-index value*/
+            background-color: green;}
+        
+        #box2{ 
+            /* z-index: will work only for position:relative, absolute, fixed or sticky*/
+            position: relative;
+            top: 34px;
+            z-index: 37;
+            /*visibility: hidden; --> for hiding the element but it keeps the places reserved*/
+             /*display: none; --> it removes the element from that place*/
+            background-color: red;}
+        
+        #box3{ 
+            background-color: blue;}
+        
+        #box4{
+            background-color: olive;}
+        
+    </style>
+</head>
+<body> <!-- use $ symbol for getting the id as unique and serial wise-->
+    <div class="box" id="box1"></div>     <!-- these box1...4 id's are generated with the help of $ symbol-->
+    <div class="box" id="box2"></div>       <!--syntax was like:- "div.box#box$*4" -->
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

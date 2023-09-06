@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object Tutorials</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Math object tutorial</h1>
+    </div>
+
+    <script>
+        let m = Math;                       //This is the Math Object
+        console.log(m);
+
+        //Trignometric function
+        let fun = Math.cos(180);            //Using Math Object we got the value of cos 180
+        console.log("the value of cos(180) is: ", fun);
+
+        //Round function
+        let a = 34.689;
+        let b = 54.2;
+        console.log("Rounded value of a and b is: ", Math.round(a),Math.round(b));
+
+
+        //square root function
+        let c = Math.sqrt(64);
+        console.log("The square root value of 64 is "+c);    // you can use comma or plus symbol when calling variables
+
+        // Ceil and floor functions
+        let d = 5.6;
+        console.log("the ceil value of 5.6 is: "+ Math.ceil(d));
+        console.log("the floor value of 5.6 is: "+ Math.floor(d));
+
+        let e = 1;
+        let f = 100;
+        let r100 = e + (f-e)*Math.random();
+        console.log(r100);
+        console.log(Math.random(e,f));
+    </script>
+</body>
+</html>

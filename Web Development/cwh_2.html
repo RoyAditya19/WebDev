@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is html form tutorial</h2>
+     <form action="backend.php">
+        Name: <input type="text"><br><br>
+        Roll: <input type="text"><br><br>
+        Email: <input type="email" name="" id=""><br><br>
+         <input type="submit" value="Submit Now"><br><br>
+         Date: <input type="date" name="" id=""><br><br>
+         Are you Eligible <input type="checkbox"><br><br>
+         Gender: Male <input type="radio" name="Mygender"> Female <input type="radio" name="Mygender"> <br>
+         <!-- here name given is same because we need to select only one option not both the option -->
+         Write about yourself:
+         <div>
+            <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+         </div> 
+         <label for="name">Name</label>       <!--label is used in the case like if you want to fill the details in a field without clicking on the box then u can use this-->
+         <input type="text" name="" id="name"> <!--for and id attribute should contain the same detail-->
+         <label for="car">Car</label>
+         <select name="mycar" id="car">
+            <option value="scp">Scorpio</option>
+            <option value="frt">Fortuner</option>
+         </select>
+     </form>
+</body>
+</html>

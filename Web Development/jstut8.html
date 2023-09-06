@@ -1,0 +1,93 @@
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout and cleartimeout in JS</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is tutorial of settimeout and cleartimeout");
+        // Settimeout -- allows us to run the function once after certain interval of time
+        // cleartimeout -- allows us to run the function repeatedly after certain interval of time
+
+       // multiple arguments can be passed in the below function
+        function greet(name)    
+        {
+            console.log("Hello! \n Good Morning "+ name);
+        }
+        // setTimeout(greet,5000, "Aditya");
+
+        
+        //you can use clear timeout to delete the timeout when not required, you can do it by storing it into any variable and then calling that variable in the cleartimeout function. Example: cleartimeout(timeout) where timeout = console.log(greet,2000,"aditya")
+        
+        
+        // setInterval(greet,2000,"aditya"); -- it will run the function at each 2 seconds. 
+
+
+
+        //you cannot call greet function under settimeout like below:
+        // setTimeout(greet(), 2000);   -- this is wrong.
+
+        function displaytime()
+        {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displaytime,1000);
+    </script>
+</body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dates</title>
+</head>
+
+<body>
+    <div class="container"
+        style="border: 2px solid black; border-radius: 5px; margin: 6px; padding: 10px; background-color: blanchedalmond; width: fit-content; position: absolute; left: 800px;">
+        Current time is: <span id="time"></span></div>
+    <script>
+
+        // console.log("this is date and time tut");
+        // let now = new Date();
+        // console.log("this is date(now)"+now);
+
+
+        //the below code will fetch you the time(1000 milliseconds) after from where the reference for timeanddate is taken(here jan 1970)
+
+
+        // let dt = new Date(1000);
+        // console.log("this is also date(dt):"+dt);
+
+
+        // let newdate = new Date("2029-09-30");
+        // console.log(newdate);
+
+
+        // let newdate = new Date(year,month,date,hours,minutes,seconds,milliseconds); -- in this format also you can fetch the dates
+
+        
+
+        setInterval(timefun, 1000);
+        function timefun() {
+            time.innerHTML = new Date();
+        }
+
+    </script>
+</body>
+
+</html>

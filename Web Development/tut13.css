@@ -1,0 +1,7 @@
+p{
+    color: white;
+    background-color: hotpink;
+}
+
+/* css which has been written at the last takes the highest precedence.. and if u want any css which is written in the first should take highest precedence then write "important" before the semicolon of a color */
+/* p{color:blue;}---> here p is a selector, color is the property, and blue is the value */

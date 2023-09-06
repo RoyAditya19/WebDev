@@ -1,0 +1,237 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+.container
+{
+    background-color: greenyellow;
+}
+.box
+{
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    position: relative;                                             /*position has been made relative so that we can move it within the page */
+    animation-name: harry1;
+    animation-duration: 0.8s;                                       /*the time till the animation will run */
+    animation-iteration-count: 3;                                   /*if you want your animation to run/continue for infinite times then instead of 3(here) you can write infinite */
+    animation-fill-mode: forwards;                                  /*in this case the animation will go and stop at the maximum width provided by you */
+    /*animation-delay: 3s;*/                                        /*what this does is, it delays your animation before starting it for the mentioned time */
+    /*animation-direction: alternate;*/
+    
+    /* These properties can be set using this shorthand */
+    /* animation: animation-name  animation-duration  animation-timing-function  animation-delay  animation-iteration-count  animation-fill-mode; */
+    /* animation: harry 5s ease-in 1s 12 backwards; */
+
+}
+@keyframes harry1
+{
+    from                                            /*instead of from and to we can also use percentage and include the animations inside it using curly braces for example 15%{content.....}, 30%{content....} */
+    {
+        width: 200px;
+    }
+    to
+    {
+        width: 500px;
+    }
+}
+/*
+@keyframes harry2 {
+    0%{
+        top:0px;
+        left:0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+    }
+    75%{
+        top: 250px;
+        left: 250px;
+    }
+    100%{
+        top: 0px;
+        left: 250px;
+    }
+    
+}
+*/
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+</html>
+ -->
+
+
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>CSS Transitions</title>
+ </head>
+ <style>
+     body{
+         background-color: black;
+     }
+     .container{
+        display: flex;
+     }
+     .container button{
+        height: 25px;
+        cursor: pointer;
+        transition-property: background-color;
+        transition-delay: 0s;
+        transition-timing-function: ease-in-out;
+     }
+     .container button:hover{
+        background-color: yellow;
+        color: blue;
+        height: 50px;
+        width: 50px;
+        border-radius: 15px;
+
+     }
+
+     #box{
+         display: flex;
+         height: 200px;
+         width: 200px;
+         background-color: red;
+         justify-content: center;
+         align-items: center;
+        /*transition-property: background-color;        transition property says that in which area you want to apply the transition.... here the transition has been applied regarding the background
+         transition-duration: 1s;
+         transition-timing-function: ease-in-out;
+         transition-delay: 2s; */
+ 
+         /* Transition short hand property in one line */
+         /* transition: background-color 1s ease-in-out 2s; */
+ 
+         
+         transition: all 1s ease-in-out .3s;
+     }
+     
+     #box:hover{
+         background-color: green;
+         height: 400px;
+         width: 400px;
+         border-radius: 100px;
+         font-size: 45px;
+ 
+     }
+     .butt{
+        display: flex;
+     }
+ 
+ </style>
+ <body>
+     <h3>This is CSS Transition Tutorial</h3>
+     <div class="container">
+         <div id="box">
+             This is my box
+         </div>
+         <button class="butt">Click</button>
+     </div>
+ </body>
+ </html>
+  -->
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 80vh;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+           /* animation-name: harry;*/
+            /*animation-duration: .5s;*/
+            /*animation-iteration-count: infinite;*/
+            /*transition: all 0.5s ease-in-out;*/
+        }
+       /* @keyframes harry {
+            from{
+                rotate: 360;
+            }
+            to{
+                rotate: 360deg;
+            }
+            
+        }*/ 
+        .box:hover{
+            /* transform: rotate(360deg);*/ 
+            /* transform: skew(40deg); */
+            /* transform: scale(2); */                  /* it will resize the box 3 times */
+            /* transform: translateX(123px); */         /* it will move in x axis upto 123px */
+            /* transform: translateY(123px); */
+           /* transform: translate(123px, 123px);*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is a box</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

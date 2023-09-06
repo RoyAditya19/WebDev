@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript | Strings and String Methods</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus id
+        blanditiis commodi?
+      </h1>
+      <div id="content"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        eveniet voluptatem repellendus incidunt, quod obcaecati atque corporis
+        temporibus blanditiis deleniti nostrum commodi. Mollitia non, ut
+        delectus harum expedita tempore nulla perspiciatis accusantium qui
+        accusamus suscipit reiciendis assumenda soluta molestias animi enim
+        quibusdam rem illo laboriosam similique. Fugit, saepe earum! Assumenda a
+        corporis ipsam adipisci nobis laudantium. Labore eum esse qui nostrum
+        soluta, numquam assumenda? Consectetur.
+      </p>
+    </div>
+    <script>
+        var string = "this";
+        var string1 = "Learning web development";
+        var string2 = "Harry";
+        var temp = ` ${string1} with a person named ${string2} `;
+        console.log(temp);
+       // console.log(string);
+       var len = string.length;
+       console.log(`the length of string is ${len}`);
+       document.getElementById('content').innerHTML = '<h3> this is a heading of level 3 </h3>'; //it will include all the content(dynamically) to a specific area whose id is content
+    </script>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str = "This is a String";
+        console.log(str);
+        //first occurence of a substring
+        var position = str.indexOf("is");
+        console.log(position);
+
+        //last occurence of a substring
+        position = str.lastIndexOf("is");
+        console.log(position);
+
+        //
+        var replaced = str.replace('String', 'Adii');
+        console.log(str);
+        console.log(replaced);
+
+        //
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            margin: 34px 23px;
+        }
+       input{
+        display: block;
+       } 
+       input[type='text']{
+        border: 2px solid red;
+       }
+       a{
+        text-decoration: none; 
+        color: purple;           /*removing the underline from the Google*/
+       }
+       li:nth-child(3){             /*the third child in the list will be coloured*/
+        color: green;
+       }
+       li:nth-child(2n+0){              /*2n+0 means that every second element will be coloured or will display changes accordingly*/
+        color: red;
+       }
+       li:nth-child(odd){               /*will make changes for odd elements*/
+        background-color: aqua;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="password" placeholder="Enter Password" required>
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">Item 2</li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+            <li class="item" id="item-6">Item 6</li>
+        </ul>
+    </div>
+</body>
+</html>
+-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Labrada:ital,wght@0,100;1,900&family=Shantell+Sans:ital,wght@1,300&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1679421138603-2dfc7317365b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60');
+            content: "";        /*with the use of this only we are able to see the image otherwise the black background will appear*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+      
+
+        }
+        .navigation{
+            display: flex;
+            
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+            
+            
+        }
+        section{
+            height: 344px;
+            border: 2px solid rgb(173, 230, 187);
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;                /*this brings the item at the center of the window*/
+            justify-content: center;            /*whereas this brings the item at the center of the given/mentioned box... for ex this "section box has height of 344px so when we use justify-content it fixes the content at the center of 344px box"*/
+        } 
+        .hero{
+            font-size: 3rem;
+        }
+    </style>
+ </head>
+ <body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"> <a href="#">Home</a></li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+            <section>
+                <h3 class="hero">Welcome to Coding World!</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore officia veritatis animi corrupti quis, beatae provident architecto totam? Dolore sit, similique blanditiis voluptatum tempora cumque magnam excepturi dolores earum eos! Fuga, labore consequuntur. Numquam?</p>
+            </section>
+    
+ </body>
+ </html>

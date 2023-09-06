@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Html File</title>
+</head>
+<body>
+    <h1>Hey Guyss! Welcome to My First Html Page</h1>
+    <form action="backend.php">
+        Name: <input type="text"><br><br>
+        School: <input type="text"><br><br>
+        10th Marks(Grade): <input type="text"> <br><br>
+        Gender: Male<input type="radio" name="mygender" id=""> Female: <input type="radio" name="mygender" id=""><br><br>
+        Phone Number : <input type="number"><br>
+        D.O.B : <input type="date" name="mydate" id=""><br>
+        Hobbies :<br>
+        Singing<input type="checkbox"><br>
+        Dancing <input type="checkbox" name="" id=""><br>
+        <input type="submit" value="Submit Now"><br><br>
+        <strong> Which course you want to select: </strong>  
+    <label for="courses">Auto Field</label>                                         <!-- as soon as you click on the "autofield" or the "courses" mentioned under the label it  automatically get clicked on the field area -->
+    <input type="text" name="my courses" id="courses">
+    <label for="Mycourses">Courses</label>
+    <select name="Course" id="Mycourses">
+        <option value="Web Development">Web Development</option>
+        <option value="Full Stack Development">Full Stack Development</option>
+        <option value="Software Development">Software Development</option>
+        <option value="Software Analysis">Software Analysis</option>
+    </select><br>
+    <h4>Ordered Lists of My Branches: </h4>
+    <ol type="i">                               <!-- this type helps you to get option format in roman form, by changing the type you can get the options format in different type-->
+        <li>Bangalore</li>
+             <strong>Here I have two Branches</strong>
+             <ol>Bannerghata</ol>
+             <ol>Silk Board</ol>
+        <li>Mangalore</li>
+        <li>Chennai</li>
+        <li>Varanasi</li>
+    </ol><br><br>
+    <h5>You can Google about the Company to know more: <a href="https://www.google.com" target="_blank">Google</a></h5>
+    
+    </form>
+    <h4>Branches of My Work</h4>
+    <table>
+        <head>
+            <th>Name Of The Business</th>
+            <th>Location</th>
+        </head>
+        <body>
+            <tr>
+                <td>PrivateSolutions.LTD</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>DetectiveSolutions.LTD</td>
+                <td>Mangalore</td>
+            </tr>
+            <tr>
+                <td>LegalSolutions.LTD</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>IllegalSolutions.LTD</td>
+                <td>Bangalore</td>
+            </tr>
+        </body>
+    </table><br><br>
+ 
+    <details>Paplu ka aalu,Paplu ka aalu,Paplu ka aalu. Kyu? Hila Dala Na. Bomb se udaa dega apunn teko.     <!--here the things you wanna display as a heading put that content inside the Summary and the things which you want to hide keep that inside details and outside the summary-->
+        <summary>
+           Bored?? Wanna Listen a Story?? Hit the Icon
+        </summary>
+    </details><br><br>
+    <strong> How much do you rate my First Html out of 10 </strong>   
+    <label for="Rating">Rate</label>   <!--if u ignore this line then also its possible to get a multiple options to select-->
+    <select name="My Rating" id="Rating" value="Rate">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select><br><br>
+    <h1>Do Not Try to Copy the Design of this Page &copy;</h1>     <!-- &copy is an entity here.... it gives you the capital c under a circle which is used to show the copyright-->
+</body>
+</html>

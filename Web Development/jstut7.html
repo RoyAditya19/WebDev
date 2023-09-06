@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<style>
+#btn{
+        background-color: red;
+        border-radius: 5px;
+        padding: 10px 14px;
+    }
+</style>
+
+<body>
+    <!-- events are basically a signal which says that something has happened/occured etc. -->
+    <!-- 
+    Browser events:
+    click
+    contextmenu(when we right click using mouse)
+    mouseover/mouseout
+    mousedown/mouseup 
+    mousemove
+
+
+    submit
+    focus
+
+    DOMContentLoaded -->
+
+    <h1>This is Heading</h1>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum quidem voluptas odit porro distinctio
+        dolores doloribus reprehenderit esse accusamus, excepturi, quis consectetur vero dicta? Explicabo, impedit.
+        Necessitatibus, explicabo, ullam sequi eos harum amet consectetur maiores eum, temporibus ipsam aut! Neque
+        consequatur, iusto, illo illum minus numquam qui sequi sapiente omnis beatae et. Eos explicabo iure odio
+        laboriosam maiores hic, et est, recusandae reiciendis a, asperiores error voluptatem! Aperiam eos est maxime
+        libero ut ipsum voluptas nihil similique, mollitia blanditiis sapiente fugiat labore illo suscipit eaque
+        laboriosam ab quibusdam provident odit quod cumque. Placeat quaerat praesentium optio, error iste deserunt
+        cupiditate dolore, repellat nesciunt maxime voluptas illo ab ducimus minima animi, quae numquam laborum atque
+        odio aliquam. Provident dolore officiis nostrum, nesciunt veritatis nulla dignissimos laborum maiores architecto
+        ex, illo dolores, consequatur totam? Neque nesciunt, sequi suscipit soluta delectus illum, praesentium modi ex
+        optio sapiente ducimus, possimus saepe! Dolorum perspiciatis debitis suscipit fuga porro aut tenetur facilis
+        error modi molestias, ratione quaerat voluptas molestiae eaque laudantium, obcaecati nesciunt odio corrupti
+        temporibus ullam delectus aperiam quis magni. Assumenda doloremque tempora necessitatibus ullam saepe porro vel
+        nihil aliquam quae corrupti fugit, nostrum doloribus nulla suscipit itaque. Aut aspernatur esse voluptates
+        perferendis sapiente?</p>
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+        <script>
+          
+            function toggleHide()
+            {
+                let btn = document.getElementById('btn');
+                let para = document.getElementById('para');
+                if(para.style.display != 'none')
+                {
+                    para.style.display = 'none';
+                }
+                else
+                {
+                    para.style.display = 'block';
+                }
+            }
+
+//the below code gives us alert whenever we move our cursor to the paragraph we hv written.
+            let para = document.getElementById('para');
+            para.addEventListener('mouseover', function run(){
+                alert('Mouse is over the Para')
+            });
+            // para.addEventListener('mouseout', function run()
+            // {
+            //     alert('Mouse is now outside! ')
+            // });
+        </script>
+</body>
+
+</html>
+
+
+ 

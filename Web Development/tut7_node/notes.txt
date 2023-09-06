@@ -1,0 +1,8 @@
+1. "npm init"(it will create a json package based on the details you fill in the terminal section of vs code)
+2. "npm install slugify"(installs a module named slugify)
+3. "npm install nodemon --save-dev"(installs nodemon and saves under dev-dependencies in package.json)
+4. "npm install nodemon --global" (installs nodemon globally)
+5. "nodemon ./tut.js"(nodemon runs the file tut.js), (now if you edit and save the changes done in tut.js, nodemon will automatically detect it and will reflect in the terminal section)
+nodemon helps you automatically save the changes it reflects the changes in browser wihtout having to start the server again, as we were doing it in previous projects
+6. "npm i browserify"(installs the browserify package)
+7. "slugify" : "^1.3.6" (here ^ depicts that it will install the exact version mentioned)

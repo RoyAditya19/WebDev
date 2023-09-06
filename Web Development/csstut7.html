@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding</title>
+    <style>
+        *{  /*this will apply the changes for the universal things but you can override them using class or id*/
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;   
+        }
+        .container{
+            background-color: grey;
+            border: 3px solid rgb(92, 27, 231);
+            padding: 60px;  /* "padding: top right bottom left; if you want to give the padding for a border "*/
+            margin: 20px;
+            border-radius: 25px;
+            width: 600px;
+            box-sizing: border-box; /*this will create the box of a particular size and if you change the padding or margin then it will automatically adjust itself without disturbing the size of the box*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="first">this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. </p>
+     </div>   
+    <div class="container"> <p id="second">this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. </p>   </div>
+     <div class="container">   <p id="third">this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. this is a paragraph. </p>   </div>
+     
+</body>
+</html>

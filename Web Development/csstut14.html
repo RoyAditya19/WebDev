@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media only screen and (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3{
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px)  {
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mai ek iPhone hoon</div>
+    <div class="box" id="box-2">Mai ek Tablet hoon</div>
+    <div class="box" id="box-3">Mai ek desktop computer hoon</div>
+    <div class="box" id="box-4">Mai ek widescreen computer hoon</div>
+</body>
+</html>
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 8px;
+            border: 2px solid red;
+            /*width: 500px;*/
+            /*height: 400px;*/
+            height: 100vh;                                /* now what this does is it takes the total size of view port i.e., how much the screen is visible it will take that much height automatically*/
+            width: 100vw;                                   /*now this takes whole width */
+        }
+
+        h1{
+            text-align: center ;
+        }
+        #first{ 
+            /*font-size: 5em;*/                         /*this em increases the size of the targeted line by 10(or whatever number have been mentioned) times of it's parent*/
+            /*padding: 3em;*/                           /*now what this does is it gives the padding to the targeted element by multiplying the number to the total font-size(after multiplying with parent) of an element*/
+        }
+        #second{
+            /*font-size: 3rem;*/                        /*now what this rem does is that it adjust the size of the targeted element by getting multiplied to the html(root element) size*/
+            /*padding: 3rem;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is Heading</h1>
+        <h1 id="second">This is Second Heading</h1>
+        <h1 id="third">This is Third Heading</h1>
+    </div>
+</body>
+</html>
+-->
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gloock&family=Labrada:ital,wght@0,100;1,900&family=Shantell+Sans:ital,wght@1,300&family=Tilt+Prism&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" media="screen and (max-width: 1278px)" href="phone.css">
+  <link rel="stylesheet" href="css1.css" />
+  <style>
+    /*CSS Reset*/
+    body {
+      font-family: "Labrada", serif;
+      font-family: "Shantell Sans", cursive;
+
+      margin: 0px;
+      padding: 0px;
+      background: url("http://www.pixelstalk.net/wp-content/uploads/2016/09/All-White-Background-HD.jpg");
+    }
+    .left {
+      display: inline-block; /*used for shifting to the left, works same as float*/
+     /* border: 2px solid blue;*/
+      position: absolute; /*fixes the position*/
+      left: 0px;
+      top: 0px;
+    }
+    .left img {
+      width: 91px;
+      height: 98px;
+      /* filter: invert(100%);  --> converts the color of the image*/
+    }
+    .left div {
+      text-align: center;
+      font-size: 21px;
+    }
+    .mid {
+      /*3 conditions for your item to be at center:- 1.display:block,2.width should be set,margin should be auto*/
+      display: block;
+      width: 33%;
+      margin: auto;
+      /*border: 2px solid black;*/
+    }
+    .right {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      display: inline-block;
+      /*border: 2px solid green;*/
+    }
+    .btn {
+      margin: 5px;
+      padding: 5px;
+      cursor: pointer;
+      font-weight: 700;
+      border-radius: 15px;
+      background-color: grey;
+      font-family: "Labrada", serif;
+      font-family: "Shantell Sans", cursive;
+    }
+    .btn:hover {
+      background-color: white;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+    }
+    .navbar li a {
+      text-decoration: none;
+      color: black;
+      padding: 10px 10px;
+    }
+    .navbar a:hover,
+    .navbar a:active {
+      background-color: pink;
+      text-decoration: underline;
+    }
+    .container1 {
+      border: 2px solid black;
+      width: 33%;
+      border-radius: 42px;
+      padding: 69px;
+      margin: 123px 350px
+    }
+    .container1 h3 {
+      text-align: center;
+    }
+    .form-group input {
+      font-family: "Labrada", serif;
+      font-family: "Shantell Sans", cursive;
+      text-align: center;
+      display: block;
+      width: 50%;
+      padding: 1px;
+      font-size: 20px;
+      margin: 3px auto;
+    }
+    .container1 button {
+      display: block; /*all these three conditions are used for bringing the submit button at the center*/
+      width: 23%;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <header>
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="gym/pexels-anush-gorak-1431282.jpg" alt="" />
+        <div>Fitness</div>
+      </div>
+      <!-- mid box for navigation bar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li type="none"><a href="#">Home</a></li>
+          <li type="none"><a href="#">About Us</a></li>
+          <li type="none"><a href="#">Fitness Calc</a></li>
+          <li type="none"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">Contact Us Now</button>
+        <button class="btn">Mail Maadi</button>
+      </div>
+    </header>
+    <div class="container1">
+      <h3>Join This Gym For Standing Out Of The Crowd</h3>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <input type="date" placeholder="Enter your age" required />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter your location" required />
+        </div>
+        <div class="form-group">
+          <input type="number" placeholder="Enter your number" required />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

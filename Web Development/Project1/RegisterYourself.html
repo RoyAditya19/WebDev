@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <nav class="navbar">
+      <div id="logo-cum-name">
+          <h2 style="font-size: 2.4rem;">InternKaro</h2>
+      </div>
+  </nav>
+
+  <div class="header">
+      <h3 id="h-primary" style="margin-top: 95px;">Fill The Form To Register Yourself!!</h3>
+    </div>
+        <div class="container">
+          <form action="noaction.php">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" required placeholder="Enter your name" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="Marks">10th Marks:</label>
+              <input type="number" id="Marks" placeholder="Enter your 10th Marks">
+            </div>
+            <div class="form-group">
+              <label for="Marks">10th Marks:</label>
+              <input type="number" id="Marks" placeholder="Enter your 10th Marks">
+            </div>
+            <div class="form-group">
+              <label for="Marks">10th Marks:</label>
+              <input type="number" id="Marks" placeholder="Enter your 10th Marks">
+            </div>
+            <div class="form-group">
+              <label for="dob">D.O.B:</label> 
+              <input id="dob" type="date" required placeholder="Enter your D.O.B" />
+            </div>
+            <div class="form-group">
+              <strong>Select Identity Type</strong>
+              <select name="courses" id="course">
+                <option value="Aadhar">Aadhar</option>
+                <option value="Voter">Voter-ID</option>
+                <option value="PAN">PAN</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                required
+                placeholder="Enter the Identity Details"
+              />  
+            </div>
+            <strong>Gender:</strong>
+            Male <input type="radio" name="gender" /> Female
+            <input type="radio" name="gender" /> Others
+            <input type="radio" name="gender" />
+    
+            <div class="form-group">
+                <label for="age">Age:</label>
+              <input type="number" required placeholder="Enter your Age" id="age"/>
+            </div><br>
+            <div class="button1">
+              <button class="btn"><a href="myfirstwebsite.html" target="_blank" id="btn1" style="text-decoration: none;">Submit</a></button> 
+              </div> 
+          </form>
+
+          
+        </div>
+        
+</body>
+</html>

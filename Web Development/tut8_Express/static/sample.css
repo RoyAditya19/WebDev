@@ -1,0 +1,52 @@
+/* *{
+    background-color: red;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    padding: 12px;
+    height: 30px;
+    top: 0px;
+    left: 0px;
+    background-color: grey;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    padding: 5px;
+}
+
+li
+
+h1{
+    margin: 12px;
+    text-align: center;
+}
+input{
+    border-radius: 8px;
+    padding: 2px;
+    height: 28px;
+    margin: 7px auto;
+    display: block;
+    width: 50%;
+}
+.btn
+{
+    border-radius: 5px;
+    height: 24px;
+    margin: auto;
+    display: block;
+    width: 59px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+}

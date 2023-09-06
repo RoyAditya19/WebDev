@@ -1,0 +1,83 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        background-color: aqua;
+        border: 2px solid blue;
+        width: 33%;
+        /* syntax for box-shadow: "offset-x" "offset-y" "blur-radius" "spread-radius"; */
+        
+        box-shadow: 10px 13px gray;                 /*if you want box shadow below the box then give the positive numbers for x and y*/
+        /*box-shadow: -10px -13px blue; */              /*if you want to give shadow above the box then you can provide the x and y details at the top of the box*/ 
+        /*box-shadow: 10px 13px 15px 15px blue;*/          /*the first two values in this are for x and y and the third one is used for blurr radius, fourth value is for spread radius..... use 3rd and 4th values simultaneously*/
+        /*box-shadow: inset 3px 5px blue;*/            /*used for displaying shadow inside the box*/
+    }
+    .card h2{
+        text-shadow: 2px 4px yellow;                    /*used for text shadow*/
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="card" id="card-1">
+       <h2>
+        card-1
+        
+       </h2> 
+    </div>
+    <div class="card" id="card-2">
+       <h2> card-2</h2> </div>
+    <div class="card" id="card-3">
+        <h2>card-3</h2></div>
+    <div class="card" id="card-4">
+        <h2>card-4</h2></div> 
+    </div>
+</body>
+</html> 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+</head>
+<style>
+    :root{
+        --box-color: red;           /*we can also give primary and danger color in place of box color*/
+    }
+    .box{
+       /* --box-color: blue;*/              /*we cannot access this outside of this box stylesheet.. if we want then we have to declare that seperately for other boxes or stylesheets*/
+        background-color: var(--box-color);
+        box-shadow: 5px 10px var(--box-color);
+        width: 33%;
+        height: 300px;
+        border: 2px solid red;
+        margin: 2px 5px;
+    }
+    .container{
+        display: flex;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

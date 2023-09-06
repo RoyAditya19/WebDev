@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and if else</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+      //  var string1 = "this is a string";
+      //  var string1 = "this is a string 2";
+
+      //  console.log(string1);                                                    //in the above two string the latest one gets printed, not the older one. this can lead to problems in the program, so for better alternative we use "let"
+                                                                                    //if we declare one variable twice using "let" then it throws the error.
+      //  let a = "u";                                                               //this is a global variable. but if we declare same variable inside the block then that variable can only be accessed within the block. it has scope of block level           
+         
+                                                                                    //the below one, we say it as a block and if we use this variable inside this block the scope of the variable remains within the block
+      //  {
+      //     console.log(string1);
+            
+      //     let a = "u6";
+      //   console.log(a);
+      // }
+      //  console.log(string1);
+      //  console.log(a)
+
+
+      //const a = "this cannot be changed";
+      //console.log(a)
+
+
+
+      //let age = 34;
+      //if(age>18)
+      //{
+      //  console.log("drink cold water!")
+      //}
+      //else{
+      //  console.log("drink normal water!")
+      //}
+
+
+
+      const cups = 45;
+      switch(cups)
+      {
+        case 4:
+            console.log("the value of cups is 4")
+            break;
+
+        case 41:
+            console.log("the value of cups is 41")
+            break;
+
+        case 44: 
+            console.log("the value of cups is 44")
+            break;
+
+        default:
+            console.log("the value is none of 4,41,44")
+            break;
+      }
+
+
+    </script>
+</body>
+</html>
+ -->
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JavaScript</title>
+ </head>
+ <body>
+    <div class="container">simple html</div>
+    <script>
+        let myvar = 34;
+
+     //   let employee = {
+     //       name: "Harry",
+     //       salary: 10,
+     //       channel: "code with harry",
+     //       channel2: "programming with harry"
+     //   }
+     //   console.log(employee)
+
+   //  let names = [12,2,"harry", undefined];
+   //  let names1 = new Array(10,4,2,"harry",undefined);                      //alternate way of assigning an array
+    // console.log(names);
+     //console.log(names[1]);                                              //slicing
+    //console.log(names.length);
+   // console.log("at first the array was: ",names1);
+   // names1.push("helloooo");
+   // console.log("now the array is: ",names1);
+    
+    let names = new Array(23);   //this creates 23 empty spaces for an array
+    console.log(names);
+</script>
+ </body>
+ </html>
