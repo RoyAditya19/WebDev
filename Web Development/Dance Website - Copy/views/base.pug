@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Aditya Dance Academy Website
+    block scripts
+    block style 
+  body
+    nav#nav-headings 
+        ul 
+            div#logo
+                img(src="/static/img/logo.png", alt="")
+                | ADA
+            li #[a(href='/') Home]
+            li #[a(href='/') About]
+            li #[a(href='/') Services]
+            li #[a(href='/contact') Contact Us]
+    block content
+    block foot
+        footer#footersection 
+            | Copyright &copy AdityaDanceAcademy | All rights reserved

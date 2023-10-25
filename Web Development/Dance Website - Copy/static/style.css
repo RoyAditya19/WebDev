@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: -7px 14px;
+    margin-right: 70px;
+}
+#logo img{
+    height: 45px;
+    margin-right: 15px;
+    filter: invert(1);
+}
+#nav-headings{
+    padding-top: 10px;
+    background-color: black;
+    height: 50px;
+    font-family: 'Caprasimo', cursive;
+}
+
+#nav-headings ul{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+#nav-headings ul li{
+    padding: 5px 7px;
+    list-style: none;
+}
+
+#nav-headings ul li a
+{
+    text-decoration: none;
+    padding: 8px 8px;
+    color: white;
+}
+#nav-headings ul li a:hover
+{
+background-color: grey;
+border-radius: 10px;
+}
+#introsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    font-size: 35px;
+    background-color: pink;
+    background: center / cover no-repeat url("/static/bg.jpg");
+}
+
+
+#introsection div.small{
+    font-size: 1.4rem;
+}
+
+#missionsection{
+    height: 300px;
+    margin: auto;
+    width: 70%;
+}
+#missionsection h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.card{
+    display: inline-block;
+    margin: 25px 22px;
+    height: 200px;
+    border-radius: 6px;
+    width: 28%;
+    border: 3px solid black;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.card-img img{
+    background-color: white;
+}
+
+#sponsorsection{
+    height: 300px;
+    background-color: yellow;
+}
+
+#sponsorsection h2{
+    text-align: center;
+    padding: 10px;
+}
+.sponsors{
+    display: flex;
+    height: 250px ;
+    margin: auto;
+    justify-content: center;
+}
+.spimage{
+    height: 80%;
+    margin: 20px;
+}
+#footersection{
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

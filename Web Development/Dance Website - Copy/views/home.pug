@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts
+    script(src="/static/script.js")
+
+block style 
+    style 
+        include ../static/style.css
+
+block content   
+    section#introsection 
+        div Welcome to Adi's Dance Academy 
+        div.small Register Here 
+        
+    section#missionsection 
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection
+            div.card-img 
+        div.card
+            h3 Dance as you wish! 
+        div.card
+            h3 Zumbaa 
+    section#sponsorsection 
+        h2 Our Sponsors 
+        div.sponsors
+            img(src="/static/img/img1.jpg", alt="sponsor images" class = "spimage")
+            img(src="/static/img/img2.jpg", alt="sponsor images" class = "spimage")
+            img(src="/static/img/img3.jpg", alt="sponsor images" class = "spimage")
+            img(src="/static/img/img4.jpg", alt="sponsor images" class = "spimage") 
+block foot 
+    footer#footersection 
+        | Copyright &copy AdityaDanceAcademy | All rights reserved
