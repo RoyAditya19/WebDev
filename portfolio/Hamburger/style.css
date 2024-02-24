@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar Section */
+.navbar::before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    opacity: 0.5;
+    z-index: -1;
+    background-color: grey;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    /* padding: 5px 12px; */
+}
+.navbar ul li{
+    display: flex;
+    padding: 3px 0px;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 0 25px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: black;
+}
+
+.burger
+{   
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 5px;
+}
+
+.line
+{
+    width: 30px;
+    background-color: black;
+    height: 4px;
+    margin: 2px 3px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:800px)
+{
+    .nav-list
+    {
+        flex-direction: column;
+        /* padding: 5px 2px; */
+    }
+
+    .burger
+    {
+        display: block;
+    }
+    .h-nav
+    {
+        height: 50px;
+    }
+
+    .v-clas
+    {
+        opacity: 0;
+    }
+}
+
+.a-container
+{
+    display: flex;
+}
+
+.a-container a
+{
+    padding: 10px 15px;
+}
+/* First-Section */
+.first-section::before
+{   
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 1500px;
+    background-image: linear-gradient(-55deg, rgb(169, 169, 248) 0%, lightblue 100%);
+    /* left: 50%; */
+    /* opacity: 2; */
+    top: -30%;
+    right: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.first-section.signup-mode::before
+{
+    transform: translate(100%, -50%);
+    transition: all 0.5s ease;
+    /* transition: 0.5s ease; */
+}
+
+
+
+#first-container::before
+{
+    content: "";
+    position: absolute;
+    top: 100px;
+    background: url("./bg2.png")no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 5;
+    height: 100%;
+    width: 100%;
+}
+.form-structor
+{
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.form-structor::after
+{
+    /* content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-repeat: no-repeat; */
+    /* background-color: grey; */
+    /* opacity: 1;
+    height: 100%;
+    width: 100%;
+    z-index: -1; */
+}
+
+.form-structor .signup
+{
+    border: 2px solid darkgray;
+    width: 40%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px;
+    background: transparent;
+    display: flex;
+    border: none;
+    outline: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    transform: translateX(60%);
+    /* transition: all 0.2s ease; */
+    /* overflow: hidden; */
+}
+
+.form-structor .login
+{
+    border: 2px solid darkgray;
+    width: 40%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px;
+    background: transparent;
+    display: flex;
+    border: none;
+    outline: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    /* overflow: hidden; */
+}
+
+.form-structor .login.slide-left
+{
+    transform: translateX(-50%);
+    /* transition: all 0.2s ease; */
+}
+
+.form-holder form
+{
+    display: flex;
+    margin: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-structor .signup .form-holder input
+{
+    height: 30px;
+    width: 300px;
+    margin: 15px 0px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 0px 12px 5px;
+    text-align: center;
+
+}
+.form-structor .signup .form-title
+{
+    text-align: center;
+}
+.form-structor .login .form-holder input{
+    width: 300px;
+    height: 30px;
+    margin: 15px 0px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 0px 12px 5px;
+    text-align: center;
+}
+.login-visible
+{
+    visibility: visible;
+}
+.login-hidden
+{
+    visibility: hidden;
+}
+.signup-visible
+{
+    visibility: visible;
+}
+ .signup-hidden
+{
+    visibility: hidden;
+    /* display: block; */
+}
+.submit-btn
+{
+    width: 100px;
+    margin-top: 35px;
+    /* position: relative; */
+    /* left: 160px; */
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* text-shadow: 2px; */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.left-panel-content
+{
+    display: flex;  
+    justify-content: space-around;
+    position: absolute;
+    top: 200px;
+    padding: 10px 12px;
+}
+
+.content1-container .first
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content1-container .second{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 5px 0px;
+
+}
+.content1-container .second p{
+    width: 60%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.content1-container .third{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.content1-container .third a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 60%;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+/*  */
+.content2-container .first
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+.content2-container .second{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 5px 0px;
+
+}
+
+.content2-container .second p{
+    width: 60%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.content2-container .third{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.content2-container .third a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 60%;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.hidden3
+{
+    visibility: hidden;
+}

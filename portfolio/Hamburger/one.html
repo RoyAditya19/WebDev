@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <nav class="navbar h-nav">
+      <ul class="nav-list v-clas">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+    <div id="first-container">
+      <section class="first-section">
+        <div class="left-panel"></div>
+
+        <div class="form-structor">
+          <div class="signup signup-visible" id="signup">
+            <h2 class="form-title" style="margin-bottom: 10px; margin-top: 45px; font-weight: bold; text-transform: uppercase;">Sign up</h2>
+            <div class="form-holder">
+              <form action="#" method="post">
+                <input
+                type="email"
+                class="input"
+                placeholder="Email"
+                required=""
+                />
+                <input
+                type="password"
+                class="input"
+                placeholder="Password"
+                required=""
+                />
+                <button class="submit-btn" type="submit">Sign up</button>
+              </form>
+            </div>
+            <h2
+              id="login1"
+              style="text-align: center; cursor: pointer; margin-top: 10px" 
+            >
+              or Login?
+            </h2>
+            <p style="text-align: center; color: white;">Or Signup with social-media handles!</p>
+            <div class="a-container">
+              <a href=""><i class='bx bxl-google'></i></a>
+              <a href=""><i class='bx bxl-instagram' ></i></a>
+              <a href=""><i class='bx bxl-facebook' ></i></a>
+              <a href=""><i class='bx bxl-github' ></i></a>
+            </div>
+          </div>
+          <div class="login login-hidden" id="login">
+            <h2 class="form-title" style="text-transform: uppercase; font-weight: bold; margin-bottom: 10px; margin-top: 45px;">Log in</h2>
+            <div class="form-holder">
+              <form action="#" method="post" >
+
+                <input
+                type="email"
+                class="input"
+                placeholder="Email"
+                required=""
+                />
+                <input
+                type="password"
+                class="input"
+                placeholder="Password"
+                required=""
+                />
+                <button class="submit-btn" type="submit">Log in</button>
+              </form>
+            </div>
+            <h2
+              id="signup1"
+              style="text-align: center; cursor: pointer; margin-top: 20px"
+            >
+              or Signup?
+            </h2>
+            <p style="text-align: center; color: white;">Or Login with social-media handles!</p>
+            <div class="a-container">
+              <a href=""><i class='bx bxl-google'></i></a>
+              <a href=""><i class='bx bxl-instagram' ></i></a>
+              <a href=""><i class='bx bxl-facebook' ></i></a>
+              <a href=""><i class='bx bxl-github' ></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-panel-content">
+          <div class="content1-container">
+            <div class="first">
+              <h1>New to Us!</h1>
+            </div>
+            <div class="second">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Pariatur, beatae. Quo, consequatur pariatur?
+              </p>
+            </div>
+            <div class="third">
+              <a href=""><i class='bx bxl-google'></i></a>
+              <a href=""><i class='bx bxl-instagram' ></i></a>
+              <a href=""><i class='bx bxl-facebook' ></i></a>
+              <a href=""><i class='bx bxl-github' ></i></a>
+            </div>
+          </div>
+          <div class="content2-container hidden3">
+            <div class="first">
+              <h1>Welcome Back!!</h1>
+            </div>
+            <div class="second">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Pariatur, beatae. Quo, consequatur pariatur?
+              </p>
+            </div>
+            <div class="third">
+              <a href=""><i class='bx bxl-google'></i></a>
+              <a href=""><i class='bx bxl-instagram' ></i></a>
+              <a href=""><i class='bx bxl-facebook' ></i></a>
+              <a href=""><i class='bx bxl-github' ></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./index.js">
+      import 'boxicons'
+    </script>
+  </body>
+</html>

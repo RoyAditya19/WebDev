@@ -1,0 +1,110 @@
+/* Nav-Section */
+.navbar
+{
+    display: flex;
+    flex-direction: column;
+    width: 400%;
+    font-size: 2rem;
+}
+.navbar ul li a{
+    margin: 0px;
+    padding: 0px 8px;
+    font-size: 2rem;
+
+}
+/* First-Section */
+
+#first-section
+{
+    top: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400%;
+    font-size: 2.5rem;
+
+}
+
+#first-section .heading
+{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+
+}
+#first-section img{
+    margin: 0px 345px;
+}
+.icon-set
+{
+    font-size: 2.5rem;
+}
+#intro-me p
+{
+    font-size: 2.5rem;
+}
+/* Second-Section */
+#second-section
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    flex-direction: column;
+    width: 320%;
+
+}
+.heading-sec
+{
+    display: block;
+    margin-left: 140px;
+    font-size: 2rem;
+
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 1px;
+}
+.vertical-line
+{
+    width: 50px;
+    height: 1px;
+    margin: 46px 0px;
+}
+.vertical-line img{
+    position: relative;
+    top: -14px;
+    left: -30px;
+}
+.content
+{
+    position: relative;
+    top: -92px;
+    left: 150px;
+    width: 500%;
+    font-size: 2rem;
+
+}
+.content h4{
+    width: 331px;
+}
+.content h5{
+    width: 424px;
+}
+/* Third-Section */
+#third-section {
+    display: flex;
+    flex-direction: column;
+    width: 400%;
+}
+
+.skill-percentage
+{
+    width: 20%;
+    position: relative;
+    left: 410px;
+    top: -14px;
+}

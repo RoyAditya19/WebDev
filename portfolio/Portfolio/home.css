@@ -1,0 +1,407 @@
+/* nav section */
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: orange;
+    height: 1500px;
+    overflow-x: hidden;                 /*hides horizontal scroll bar*/
+}
+
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+} */
+
+/* Style for the dropdown content */
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cf8080;
+    min-width: 160px;
+    z-index: 2;
+} */
+
+/* Style for the dropdown links */
+/* .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} */
+
+/* Change color on hover */
+/* .dropdown-content a:hover {
+    background-color: #ddd;
+} */
+
+/* Show the dropdown content when hovering over the dropdown container */
+/* .dropdown:hover .dropdown-content {
+    display: block;
+}      */
+
+.navbar h1{
+
+    animation: slideleft 1s ease forwards;
+}
+@keyframes slideleft
+{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    height: 80px;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(245, 186, 75);
+    z-index: -1;
+    height: 80px;
+    width: 100%;
+    opacity: 0.5;
+}
+.navbar ul{
+    display: flex;
+    animation: slideright1 1s ease-in;
+}
+.navbar ul li{
+    list-style: none;
+    /* display: inline-block; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* left: 700px; */
+}
+.navbar ul li a{
+    /* padding-right: 30px;
+    margin-right: 25px; */
+    padding: 8px 12px;
+    margin: 5px 12px;
+    cursor: pointer;
+    /* border-radius: 10px; */
+    color: rgb(38, 16, 72);
+    text-decoration: none;
+    /* transition: ease-in 2s; */
+    /* transition: 1s ease-in-out; */
+}
+@keyframes slideright1 {
+    0%
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.navbar ul li a:hover{
+    background-color: rgb(173, 169, 169);
+    border-radius: 15px;
+    
+}
+
+/* First Section */
+#first-section
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 120px;
+    /* margin-top: 180px; */
+    /* align-items: center; */
+}
+#heading1{
+    animation: slideleft 1s ease-in;
+}
+#first-section img{
+    width: 30%;
+    margin-top: 50px;
+    margin: 145px 97px;
+    margin-bottom: 50px;
+    animation: slideright1 1s ease;
+}
+
+#intro-me{
+    animation: slideleft 0.8s alternate;
+}
+
+/* Second Section */
+#second-section
+{
+    margin: auto;
+    /* display: flex; */
+}
+.heading-sec{
+    margin-top: 20px;
+    text-align: center;
+}
+.box{
+    background: white;
+    height: 2px;
+    width: 50vw;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
+.vertical-line
+{
+width : 2px;
+height: 80px;
+background: white;
+margin: 0 123px;
+/* margin: 0 100px; */
+}
+.vertical-line img{
+    position: relative;
+    top: -26px;
+    left: -13px;
+}
+.content h4{
+    position: relative;
+    top: 45px;
+    left: -70px;
+    width: 250px; 
+}
+.content h5{
+    position: relative;
+    top: 45px;
+    left: -100px;
+    width: 250px;
+}
+
+/* Third Section */
+.third-heading{
+    display: block;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.skill1{
+    width: 45%;
+}
+.skill2{
+    width: 45%;
+}
+.skill3{
+    width: 45%;
+}
+.skill4{
+    width: 45%;
+}
+.skill5{
+    width: 45%;
+}
+.skill-name
+{
+    width: 20%;
+}
+.skill-bar
+{
+    width: 60%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0px rgb(250, 250, 3);
+}
+.skill-level
+{
+    background-color: red;
+    width: 80%;
+    height: 10px;
+    border-radius: 15px;
+    animation:  moveleft 0.8s 4 ease;
+    transform-origin: left;
+}
+@keyframes moveleft
+{
+    0%
+    {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.skill-percentage
+{
+    width: 20%;
+    position: relative;
+    left: 415px;
+    top: -14px;
+}
+.skill-set1
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-set2
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-set3
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-set a
+{
+    display: inline-flex;
+margin-right: 15px;
+border: 2px solid black;
+border-radius: 50%;
+background: transparent;
+}
+.icon-set a:hover
+{
+    box-shadow: 0px 0px 15px yellow;
+}
+/* .navbar ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    background-color:rgb(143, 138, 138);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.navbar ul li a:hover::after{
+    transform: scaleX(1);
+    /* font-size: 1.08rem; */
+
+
+
+/* #search-box{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+}
+#search-box input{
+    height: 25px;
+    border-radius: 5px;
+}
+#search-box button{
+    cursor: pointer;
+    height: 25px;
+    border-radius: 5px;
+    width: 60px;
+} */
+
+/*
+#nav::before{
+    content: "";
+     background: black; 
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+*/
+
+footer{
+    position: relative;
+    bottom: -60px;
+    height: 180px;
+    background-color: #f7b133;
+}
+.footer{
+    display: flex;
+    /* height: 140px; */
+    justify-content: space-evenly;
+    padding: 25px 60px;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer-rights{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.details{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    border: 2px solid rgb(184, 184, 239);
+    border-radius: 20px;
+    width: 50%;
+}
+
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 22px;
+    background-color: black;
+}
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+    100%{
+        width: 90%;
+    }
+}
